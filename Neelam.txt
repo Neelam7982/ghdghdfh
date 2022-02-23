@@ -16,3 +16,23 @@ using System;
 
 output = Before swap a= 10 b= 20
          After swap a= 20 b= 10
+         
+         (Second Method) 
+ Write the program c# swap two number using third variable.
+ 
+ using System;  
+  public class SwapExample  
+   {  
+     public static void Main(string[] args)  
+      {  
+       int  a=10, b=20,temp;            
+       Console.WriteLine("Before swap a= "+a+" b= "+b);    
+       temp=a; //a=30 (10+20)      
+       a=b; //b=10 (30-20)      
+       b=temp; //a=20 (30-10)    
+       Console.Write("After swap a= "+a+" b= "+b);       
+     }  
+  }
+  
+  Output = Before swap a= 10 b= 20
+           After swap a= 20 b= 10
