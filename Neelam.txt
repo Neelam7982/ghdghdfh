@@ -27,12 +27,35 @@ output = Before swap a= 10 b= 20
       {  
        int  a=10, b=20,temp;            
        Console.WriteLine("Before swap a= "+a+" b= "+b);    
-       temp=a; //a=30 (10+20)      
-       a=b; //b=10 (30-20)      
-       b=temp; //a=20 (30-10)    
+       temp=a;    //temp=12      
+       a=b;       //a=11      
+       b=temp;    //b=12 
        Console.Write("After swap a= "+a+" b= "+b);       
      }  
   }
   
   Output = Before swap a= 10 b= 20
            After swap a= 20 b= 10
+                 
+                 (Third Method)
+Write the program c# swap two number using third variable in user input.
+
+using System;  
+  public class SwapExample  
+   {  
+     public static void Main(string[] args)  
+      {  
+       int  a, b,temp;
+       Console.WriteLine("\nInput the First Number : ");
+       
+       a = int.Parse(Console.ReadLine());
+       Console.WriteLine("\nInput the Second Number : ");
+       b = int.Parse(Console.ReadLine());
+       Console.WriteLine("Before swap a= "+a+" b= "+b);  
+       
+       temp=a;    //temp=12      
+       a=b;       //a=11      
+       b=temp;    //b=12    
+       Console.Write("After swap a= "+a+" b= "+b);       
+     }  
+  }
